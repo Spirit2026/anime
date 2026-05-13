@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Odyssey Room</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intitial-scale=1.0">
+    <link href="../styles/styles.css" rel="stylesheet">
+	<script src="../javascript.js"></script>
+</head>
+<body>
+<div id="wrapper">
+
+    <header>
+        <h1>Action and Adventure</h1>
+    </header>
+
+    <nav>
+		<ul> 
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="action_and_adventure_room.html">Odyssey Room</a></li>
+            <li><a href="leisure_and_relaxing_room.html">Healing Room</a></li>
+            <li><a href="../events/japan_events.html">Japan Events</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+			<li><a href="https://www.crunchyroll.com" target="_blank" rel="noopener noreferrer">Crunchyroll</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Your Quest Begins Here</h2>	
+		
+		<audio id="bg-music" loop> 
+		  <source id="music-src" src="../videos/solo.mp4" type="audio/mp4" data-title="ReAwaker from Solo Leveling" data-url="https://www.youtube.com/watch?v=mi-j8klOLDA&list=RDmi-j8klOLDA&start_radio=1"> 
+		</audio>
+
+		<!-- Clickable trigger button -->
+		<button id="open-yt-btn">Open Reawaker from Solo Leveling Video on YouTube</button>
+
+		<script>
+		  // Find the button element
+		  const button = document.getElementById('open-yt-btn');
+		  
+		  // Listen for a click on the button
+		  button.addEventListener('click', function() {
+			// Find the source element containing the URL
+			const musicSrc = document.getElementById('music-src');
+			// Grab the value inside data-url
+			const youtubeUrl = musicSrc.getAttribute('data-url');
+			
+			// Open the URL in a new browser tab
+			window.open(youtubeUrl, '_blank');
+		  });
+		</script>
+
+		<img src="../images/action.png" alt="Action and Adventure Room">
+
+        <p>This room is a vivid fusion of comfort, creativity, and passion—where the serene warmth of a modern retreat meets the electrifying spirit of anime culture. Rich wooden textures wrap the space in a cozy embrace, while soft, golden ambient lighting glows from beneath the bed frame and along the shelves, giving the entire room a cinematic, almost dreamlike atmosphere. A large window frames a lush, green outdoor view, grounding the room in calmness and providing a refreshing contrast to the energetic visuals within.</p>
+
+		<p>The walls are adorned with striking anime posters, each one bursting with color and personality, creating a gallery that celebrates storytelling, heroism, and imagination. Carefully arranged shelves display a curated collection of manga volumes, figurines, and collectibles, giving the room a sense of depth and personal identity—as if each item holds a story waiting to be told. The bed itself becomes a centerpiece, dressed in vibrant, character-themed bedding that instantly draws the eye and invites you into a world of fantasy and nostalgia.</p>
+		
+        <h3>Plan Your Journey</h3>
+		<p>This room goes beyond aesthetics—it invites participation. The “My Next Adventure” board is more than decoration; it’s an interactive centerpiece designed to spark imagination and direction. Covered with maps, sketches, and notes, it encourages you to plan your next real-world trip or craft your own fictional universe. Whether you’re mapping out travel destinations or outlining the chapters of a manga-inspired story, this space empowers you to think like a creator.</p>
+        
+		<p>At the desk, you’ll find high-quality journals and drawing tools ready for use, making it easy to sketch characters, design worlds, or jot down ideas as they come. The environment naturally fuels creativity, offering both inspiration and the means to bring your visions to life. Nearby, a telescope by the window adds another layer of exploration, inviting you to gaze at the stars and reflect on possibilities beyond the room.</p>
+		<p>Every detail here is intentional—from the lighting to the layout—crafted to immerse you in a world where relaxation and imagination coexist. It’s not just a place to unwind; it’s a space where you step into the role of the main character, ready to dream, create, and embark on your own unforgettable journey.</p>
+
+    </main>
+
+    <footer>
+        Copyright &copy; 2026 <br>
+        <a href="mailto:elambert@amarillocollege.com">WebMaster</a>
+    </footer>
+
+</div>
+</body>
+</html>
